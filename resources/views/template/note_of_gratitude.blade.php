@@ -18,8 +18,8 @@
 
     .description {
         margin-top: 1rem;
-        font-size: 1rem; /* Base font size */
-        line-height: 1.5rem; /* Base line height */
+        font-size: 0.875rem; /* Small base font size */
+        line-height: 1.25rem; /* Adjust line height */
         color: rgb(75 85 99);
         font-weight: 900;
         font-family: 'Mongolian Baliti', sans-serif;
@@ -27,14 +27,21 @@
 
     @media (min-width: 576px) {
         .description {
-            font-size: 1.25rem; /* Slightly larger font size for larger screens */
-            line-height: 1.75rem;
+            font-size: 1rem; /* Slightly larger font size for small screens */
+            line-height: 1.5rem;
         }
     }
 
     @media (min-width: 768px) {
         .description {
-            font-size: 1.5rem; /* Larger font size for medium screens */
+            font-size: 1.125rem; /* Larger font size for medium screens */
+            line-height: 1.75rem;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .description {
+            font-size: 1.25rem; /* Larger font size for large screens */
             line-height: 2rem;
         }
     }
@@ -45,7 +52,6 @@
     }
 
     .description a:hover {
-        -webkit-text-decoration-line: underline;
         text-decoration-line: underline;
     }
 
@@ -54,7 +60,6 @@
         align-items: center;
         justify-content: space-between;
         margin-top: 1rem;
-        -moz-column-gap: 1rem;
         column-gap: 1rem;
         flex-shrink: 0;
     }
@@ -63,7 +68,6 @@
         font-size: 0.75rem;
         line-height: 1rem;
         color: rgb(31 41 55);
-        -webkit-text-decoration-line: underline;
         text-decoration-line: underline;
         transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
         border: none;

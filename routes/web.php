@@ -75,6 +75,8 @@ Route::get('/students_get', [DashboardStudentController::class, 'list']);
 Route::get('/add_students', [DashboardStudentController::class, 'store']);
 Route::get('/students_edit/{id}', [DashboardStudentController::class, 'edit']);
 Route::post('/students_update/{id}', [DashboardStudentController::class, 'update']);
+Route::get('/open_funds_students_list', [DashboardStudentController::class, 'open_funds_students']);
+Route::post('/open_fundlist', [DashboardStudentController::class, 'import']);
 
 Route::get('add_team', [DashboardTeamController::class, 'index']);
 Route::post('add_team_member', [DashboardTeamController::class, 'store']);

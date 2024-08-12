@@ -33,6 +33,11 @@
                                     <span class="nav-text">Students List</span>
                                 </a>
                             </li>
+                            <li>
+                                <a class="sidenav-item-link" href="{{ url('open_funds_students_list') }}">
+                                    <span class="nav-text">Open Funds Students</span>
+                                </a>
+                            </li>
                         </div>
                     </ul>
                 </li>

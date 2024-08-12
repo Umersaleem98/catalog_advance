@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Student;
 use Illuminate\Http\Request;
+use App\Models\OpenfundStudent;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Imports\OpenfundStudentImport;
 
 class DashboardStudentController extends Controller
 {
@@ -122,5 +125,33 @@ class DashboardStudentController extends Controller
 
         // Redirect back with a success message
         return redirect()->back()->with('success', 'Student updated successfully');
+    }
+
+    public function open_funds_students(Request $request)
+    {
+        $searchQuery = $request->input('query');
+
+        // Paginate results, 10 items per page
+        $openfundsstudents = OpenfundStudent::when($searchQuery, function ($query, $searchQuery) {
+            return $query->where('student_name', 'like', "%{$searchQuery}%")
+                         ->orWhere('qalam_id', 'like', "%{$searchQuery}%")
+                         ->orWhere('father_name', 'like', "%{$searchQuery}%")
+                         ->orWhere('institutions', 'like', "%{$searchQuery}%");
+        })->get(); // Adjust the number as needed
+
+        return view('adminpage.screens.openfund_students_list', compact('openfundsstudents', 'searchQuery'));
+    }
+
+
+
+    public function import(Request $request)
+    {
+        $request->validate([
+            'file' => 'required|mimes:xlsx,xls,csv',
+        ]);
+
+        Excel::import(new OpenfundStudentImport, $request->file('file'));
+
+        return back()->with('success', 'Students imported successfully!');
     }
 }

@@ -83,6 +83,16 @@
             font-size: 0.9rem; /* Reduced font size */
             color: black; /* Set text color to white */
         }
+        .no-hover {
+            color: blue; /* Use the default text color */
+        }
+
+        .no-hover:hover {
+            text-decoration: none;
+            color: inherit;
+            cursor: default; /* Prevent cursor change */
+        }
+
     </style>
 </head>
 <body>
@@ -138,12 +148,12 @@
             <div class="col-md-3 col-sm-12 mb-4">
                 <div class="card hover-card"  >
                     <div class="card-body text-center" style="box-shadow: 0 0 6px red; border:3px solid orange;">
-                        <img src="{{ asset('team/' . $item->image) }}" class="img-fluid mb-3" alt="{{ $item->name }} Image" style="height: 240px; width:100%">
+                        <img src="{{ asset('team/' . $item->image) }}" class="img-fluid mb-3" alt="{{ $item->name }} Image" style="height: 220px; width:100%">
                         <h3 class="text-dark mt-3 text-center">{{ $item->name }}</h3>
                         <h5 class="text-dark mt-3 text-center">{{ $item->designation }}</h5>
-                        <a href="{{ url('meet_out_team', ['id' => $item->id]) }}" class="mt-3 text-center">About {{ $item->name }} <span>+</span></a>
+                        <a href="{{ url('meet_out_team', ['id' => $item->id]) }}" class="mt-3 text-center text-dark">About {{ $item->name }} <span>+</span></a>
                         <h2 class="text-center mt-3">
-                            <a href="{{$item->social_media}}" style="height: 30px; width: 30px;"><i class="fa-brands fa-linkedin"></i></a></h2 class="text-center mt-3">
+                            <a href="{{$item->social_media}}" class="no-hover" style="height: 30px; width: 30px;"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
 
                 </div>
