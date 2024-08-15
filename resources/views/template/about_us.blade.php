@@ -11,6 +11,12 @@
         .justified-content {
             text-align: justify;
         }
+        .more-content {
+            display: none; /* Initially hidden */
+        }
+        .content-container:hover .more-content {
+            display: block; /* Show on hover */
+        }
     </style>
 </head>
 <body>
@@ -43,7 +49,7 @@
                         <p class="justified-content">
                             For more than 30 years NUST has been deploying scientific and technological innovation to meet the greater challenges of our age by translating world-leading academic research into commercial, scalable innovations that can respond to complex societal problems. To do that, NUST skims the cream of the brilliance Pakistan produces and trains those brilliant minds to produce top-class innovation and research. Unfortunately, the economic landscape of Pakistan does not allow for many of those bright minds to afford higher education.  Our aim is to not only become the driving force of Pakistan’s knowledge economy but at the heart of our objective lies the very dream of turning NUST into a need-blind university. 
                         </p>
-                        <div class="more-content d-none">
+                        <div class="more-content">
                             <p class="justified-content text-dark">
                                 To rise to the challenge, NUST strategically initiated the NUST Trust Fund (NTF) in 2012. Since its inception, NTF has dedicated itself to providing essential financial support for the university's mission—advancing cutting-edge research, supporting teaching and learning, developing world-class infrastructure, and financing scholarships for deserving students. 
                                 <br>
@@ -51,10 +57,10 @@
                                 In tandem, the University Advancement Office serves as a dynamic resource mobilization hub, fostering partnerships and collaborations to propel the university's developmental projects. At its core, the office champions equity, diversity, and inclusion (EDI), ensuring that every aspiring mind, irrespective of background, can script their unique journey within our diverse university community.
                             </p>
                         </div>
-                        <span onclick="toggleContent()" id="toggleButton" style="font-size: 20px; color:black; cursor: pointer;">
+                        {{-- <span onclick="toggleContent()" id="toggleButton" style="font-size: 20px; color:black; cursor: pointer;">
                             read more &nbsp;&nbsp;<i class="fa-solid fa-plus" id="icon1" style="font-size: 20px;"></i>
                             <i class="fa-solid fa-minus" id="icon1-minus" style="display:none;"></i>
-                        </span>
+                        </span> --}}
                     </div>
                 </div>
             </div>
@@ -105,24 +111,29 @@
             </div>
         </div>
     </div>
+
+
+
 </div>
 
 <br>
 
 @include('template.footer')
+
 <script>
     function toggleContent() {
-        const moreContent = document.querySelector('.more-content');
-        const toggleButton = document.getElementById('toggleButton');
-        const iconPlus = document.getElementById('icon1');
-        const iconMinus = document.getElementById('icon1-minus');
+        var moreContent = document.querySelector('.more-content');
+        var iconPlus = document.getElementById('icon1');
+        var iconMinus = document.getElementById('icon1-minus');
 
         if (moreContent.style.display === "none" || moreContent.style.display === "") {
             moreContent.style.display = "block";
-            toggleButton.innerHTML = 'read less &nbsp;&nbsp;<i class="fa-solid fa-minus" id="icon1-minus" style="font-size: 20px;"></i>';
+            iconPlus.style.display = "none";
+            iconMinus.style.display = "inline";
         } else {
             moreContent.style.display = "none";
-            toggleButton.innerHTML = 'read more &nbsp;&nbsp;<i class="fa-solid fa-plus" id="icon1" style="font-size: 20px;"></i>';
+            iconPlus.style.display = "inline";
+            iconMinus.style.display = "none";
         }
     }
 </script>

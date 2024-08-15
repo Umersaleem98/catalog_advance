@@ -43,10 +43,10 @@
                              : asset('students_images/' . $item->images);
                 $imageClass = ($item->make_pledge == 0 && $item->payment_approved == 0) ? 'blurred' : '';
             @endphp
-            <img class="card-img-top trans_200 {{ $imageClass }}" src="{{ $imagePath }}" alt="Student Image">
+            <img class="card-img-top trans_200 {{ $imageClass }}" src="{{ $imagePath }}" alt="Student Image" style="filter: blur(10px)">
 
             @if($item->make_pledge == 0 && $item->payment_approved == 0)
-                <img class="stamp" src="{{ asset('templates/logo/Adopted Stamp.png') }}" alt="Stamp">
+                <img class="stamp" src="{{ asset('templates/logo/Adopted Stamp.png') }}" alt="Stamp" style="color: white;">
                 <div class="card_plus trans_200 text-center">
                     <a href="#" class="disabled-link">+</a>
                 </div>

@@ -8,7 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class OpenfundStudent extends Model
 {
     use HasFactory;
-    protected $table = 'openfund_studentss';
+    // Specify the table name if it doesn't follow the Laravel naming convention
+    protected $table = 'openfund_students';
+
+    // Define the fillable attributes for mass assignment
     protected $fillable = [
         'qalam_id',
         'student_name',
@@ -27,11 +30,9 @@ class OpenfundStudent extends Model
         'year_of_admission',
         'father_status',
         'father_profession',
-        'father_profession_category',
-        'organization',
-        'category',
         'monthly_income',
         'statement_of_purpose',
         'remarks',
+        'images',
     ];
 }

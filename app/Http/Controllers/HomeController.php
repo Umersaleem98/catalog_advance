@@ -21,6 +21,13 @@ class HomeController extends Controller
         return view('template.teams.teams', compact('teams', 'events'));
     }
 
+    public function About_team($id)
+    {
+        $teams = Team::find($id);
+        $events = Event::all();
+        return view('template.teams.meet_our_team', compact('teams', 'events'));
+    }
+
     public function RMO()
     {
         // $teams = Team::all();

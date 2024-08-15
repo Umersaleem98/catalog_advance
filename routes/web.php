@@ -15,10 +15,7 @@ use App\Http\Controllers\DefaultPackageOneYearDegreeController;
 use App\Http\Controllers\DefaultPackagePerpetualSeatController;
 
 
-// auth controller routes
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware('auth');
+Route::get('/dashboard', [AuthController::class, 'dashboardview'])->middleware('auth');
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
@@ -31,6 +28,7 @@ Route::post('/register', [AuthController::class, 'register']);
 // home page or index pages routes
 Route::get('/',[HomeController::class, 'index']);
 Route::get('/our_team',[HomeController::class, 'Team_index']);
+Route::get('/meet_out_team/{id}',[HomeController::class, 'About_team']);
 Route::get('/r_m_o',[HomeController::class, 'RMO']);
 Route::get('/signrature_program',[HomeController::class, 'signrature_program_index']);
 Route::get('/about_us',[HomeController::class, 'about_us_index']);

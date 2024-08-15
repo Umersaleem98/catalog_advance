@@ -29,12 +29,60 @@
 
         <div class="content-wrapper">
           <div class="content">
-              <div class="row">
-                <div class="col-xl-8">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="row">
+                        <!-- Total Number of Students Card -->
+                        <div class="col-md-6 col-lg-3 mb-4">
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Total Students</h5>
+                                    <p class="card-text">
+                                        <span class="h2">{{ $totalStudents }}</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
+                        <!-- Open Fund Students Card -->
+                        <div class="col-md-6 col-lg-3 mb-4">
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Open Fund Students</h5>
+                                    <p class="card-text">
+                                        <span class="h2">{{ $totalStudents }}</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
+                        <!-- Undergraduate Students Card -->
+                        <div class="col-md-6 col-lg-3 mb-4">
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">UG Students</h5>
+                                    <p class="card-text">
+                                        <span class="h2">{{ $ugStudents }}</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Postgraduate Students Card -->
+                        <div class="col-md-6 col-lg-3 mb-4">
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">PG Students</h5>
+                                    <p class="card-text">
+                                        <span class="h2">{{ $pgStudents }}</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
       </div>
     </div>

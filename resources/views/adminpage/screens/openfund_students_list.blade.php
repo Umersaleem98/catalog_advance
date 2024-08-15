@@ -52,25 +52,26 @@
                                             <thead>
                                                 <tr>
                                                     <th>Qalam ID</th>
-                                                    <th>Name</th>
+                                                    <th>Student Name</th>
                                                     <th>Father Name</th>
                                                     <th>Institution</th>
                                                     <th>Discipline</th>
                                                     <th>Contact No</th>
+                                                    {{-- <th>home Address</th> --}}
                                                     <th>Scholarship Name</th>
-                                                    <th>Donor Name</th>
+                                                    <th>nust_trust_fund_donor_name</th>
                                                     <th>Province</th>
-                                                    <th>Domicile</th>                                                    <th>Gender</th>
+                                                    <th>Domicile</th>
+                                                    <th>Gender</th>
                                                     <th>Program</th>
                                                     <th>Degree</th>
                                                     <th>Year of Admission</th>
                                                     <th>Father Status</th>
                                                     <th>Father Profession</th>
-                                                    <th>Father Profession Category</th>
-                                                    <th>organization</th>
-                                                    <th>Category</th>
-                                                    <th>Category</th>
                                                     <th>Monthly Income</th>
+                                                    {{-- <th>Status of Purpose</th> --}}
+                                                    <th>Remark</th>
+                                                    <th>Images</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -87,23 +88,27 @@
                                                     <td>{{ $item->nust_trust_fund_donor_name }}</td>
                                                     <td>{{ $item->province }}</td>
                                                     <td>{{ $item->domicile }}</td>
-                                                    <td>{{ $item->city }}</td>
                                                     <td>{{ $item->gender }}</td>
                                                     <td>{{ $item->program }}</td>
                                                     <td>{{ $item->degree }}</td>
                                                     <td>{{ $item->year_of_admission }}</td>
                                                     <td>{{ $item->father_status }}</td>
                                                     <td>{{ $item->father_profession }}</td>
-                                                    <td>{{ $item->father_profession_category }}</td>
-                                                    <td>{{ $item->organization }}</td>
-                                                    <td>{{ $item->category }}</td>
                                                     <td>{{ $item->monthly_income }}</td>
                                                     {{-- <td>{{ $item->statement_of_purpose }}</td> --}}
-                                                    {{-- <td>{{ $item->remarks }}</td> --}}
+                                                    <td>{{ $item->remarks }}</td>
+                                                    <td>
+                                                        @if ($item->images)
+                                                        <img src="{{ asset('students_images/' . $item->images) }}" alt="Student Image" style="max-width: 80px; max-height: 80px;">
+                                                        @else
+                                                        No Image Available
+                                                        @endif
+                                                    </td>
                                                 </tr>
                                                 @endforeach
                                             </tbody>
                                         </table>
+
                                     </div>
 
                                     <!-- Pagination -->

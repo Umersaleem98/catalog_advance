@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('openfund_studentss', function (Blueprint $table) {
+        Schema::create('openfund_students', function (Blueprint $table) {
             $table->id();
             $table->string('qalam_id')->unique();
             $table->string('student_name')->nullable();
@@ -29,13 +29,11 @@ return new class extends Migration
             $table->string('degree')->nullable();
             $table->year('year_of_admission')->nullable();
             $table->string('father_status')->nullable();
-            $table->string('father_profession')->nullable();
-            $table->string('father_profession_category')->nullable();
-            $table->string('organization')->nullable();
-            $table->string('category')->nullable();
-            $table->string('monthly_income')->nullable();
+            $table->text('father_profession')->nullable();
+            $table->integer('monthly_income')->nullable();
             $table->text('statement_of_purpose')->nullable();
             $table->text('remarks')->nullable();
+            $table->string('images')->nullable();
             $table->timestamps();
         });
     }
@@ -45,6 +43,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('openfund_studentss');
+        Schema::dropIfExists('openfund_students');
     }
 };

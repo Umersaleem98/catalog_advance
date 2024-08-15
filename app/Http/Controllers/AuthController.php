@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Student;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -9,6 +10,16 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
+
+    public function dashboardview()
+    {
+        $totalStudents = Student::count(); // Total number of students
+        $ugStudents = Student::where('degree', 'UG')->count(); // Assuming 'degree' field exists
+        $pgStudents = Student::where('degree', 'MS')->count(); // Assuming 'degree_level' field exists
+
+        return view('dashboard', compact('totalStudents', 'ugStudents', 'pgStudents'));
+    }
+
     public function showLoginForm()
     {
         return view('auth.login');
