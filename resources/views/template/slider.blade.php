@@ -80,7 +80,7 @@
             <img src="{{ asset('templates/images/def.jpg') }}" alt="Slide 2">
             <div class="carousel-caption text-center">
                 <h1>Your gift will be passed down to generations</h1>
-                <a href="{{ url('endowment_model') }}" class="btn btn-outline-light btn-lg">Invest in Scholarship</a>
+                <a href="{{ url('select_endowment_model') }}" class="btn btn-outline-light btn-lg">Invest in Scholarship</a>
                 <a href="{{ url('select_project') }}" class="btn btn-outline-light btn-lg">Fund a Project</a>
             </div>
         </div>
@@ -89,7 +89,7 @@
             <img src="{{ asset('templates/images/pqr.jpg') }}" alt="Slide 3">
             <div class="carousel-caption text-center">
                 <h1>Build a legacy of lasting change</h1>
-                <a href="{{ url('endowment_model') }}" class="btn btn-outline-light btn-lg">Invest in Scholarship</a>
+                <a href="{{ url('select_endowment_model') }}" class="btn btn-outline-light btn-lg">Invest in Scholarship</a>
                 <a href="{{ url('select_project') }}" class="btn btn-outline-light btn-lg">Fund a Project</a>
             </div>
         </div>
