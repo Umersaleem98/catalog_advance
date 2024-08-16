@@ -24,7 +24,7 @@ class StudentController extends Controller
         $province = $request->input('province');
         $discipline = $request->input('discipline');
         $degree = $request->input('degree');
-        $city = $request->input('city'); // Add city filter
+        $domicile = $request->input('domicile'); // Add city filter
 
         $query = Student::query();
 
@@ -44,8 +44,8 @@ class StudentController extends Controller
             $query->where('degree', $degree);
         }
 
-        if ($city && $city !== 'all') { // Add city condition
-            $query->where('city', $city);
+        if ($domicile && $domicile !== 'all') { // Add city condition
+            $query->where('domicile', $domicile);
         }
 
         $query->orderByRaw("CASE WHEN images = 'dummy.png' THEN 1 ELSE 0 END, images");
@@ -135,7 +135,7 @@ class StudentController extends Controller
         $payment->save();
 
         // Update the payment_approved field in the Student model
-        $student = Student::where('name', $request->student_name)->first();
+        $student = Student::where('student_name', $request->student_name)->first();
 
         if ($student) {
             $student->payment_approved = false;
@@ -172,7 +172,7 @@ class StudentController extends Controller
         $payment->save();
 
         // Find the corresponding student
-        $student = Student::where('name', $request->student_name)->first();
+        $student = Student::where('student_name', $request->student_name)->first();
 
         if ($student) {
             // Update the pledge_approved field

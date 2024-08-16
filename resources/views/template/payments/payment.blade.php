@@ -112,7 +112,7 @@
                     <div class="col-md-6">
                         <form method="POST" action="{{ url('payments') }}" enctype="multipart/form-data">
                             @csrf
-                            <input type="text" name="student_name" class="form-control" value="{{$students->name}}" >
+                            <input type="text" name="student_name" class="form-control" value="{{$students->student_name}}" >
                             <div class="row mb-3">
                                 <div class="col-10">
                                     <label for="donor_name" class="form-label">Your Name</label>

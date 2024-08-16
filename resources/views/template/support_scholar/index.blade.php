@@ -81,6 +81,7 @@
                                     <option value="Khyber Pakhtunkhwa">Khyber Pakhtunkhwa</option>
                                     <option value="Gilgit Baltistan">Gilgit Baltistan</option>
                                     <option value="Balochistan">Balochistan</option>
+                                    <option value="Balochistan">Capital</option>
                                     <!-- Add more options for provinces -->
                                 </select>
                             </div>
@@ -91,6 +92,13 @@
                                     <option value="Bio Sciences">Bio Sciences</option>
                                     <option value="Management Sciences">Management Sciences</option>
                                     <option value="Natural Sciences">Natural Sciences</option>
+                                    <option value="Architecture">Architecture</option>
+                                    <option value="Chemical Engineering ">Chemical Engineering </option>
+                                    <option value="CE">CE</option>
+                                    <option value="Bachelor of Science in  Mass Communication">Bachelor of Science in  Mass Communication</option>
+                                    <option value="Bachelor of Business Administration">Bachelor of Business Administration</option>
+                                    <option value="Biotechnology">Biotechnology</option>
+                                    <option value="MS in Clinical Psychology">MS in Clinical Psychology</option>
                                     <!-- Add more options for disciplines -->
                                 </select>
                             </div>
@@ -103,7 +111,7 @@
                                 </select>
                             </div>
                             <div class="col-md-2 mb-3 filter-col">
-                                <select name="city" id="cityFilter" class="form-control filter-select" aria-label="Select City">
+                                <select name="domicile" id="cityFilter" class="form-control filter-select" aria-label="Select City">
                                     <option value="all" selected>All Cities</option>
                                     <option value="Abbottabad">Abbottabad</option>
                                     <option value="Astore">Astore</option>
