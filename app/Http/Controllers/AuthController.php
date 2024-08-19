@@ -15,9 +15,12 @@ class AuthController extends Controller
     {
         $totalStudents = Student::count(); // Total number of students
         $ugStudents = Student::where('degree', 'UG')->count(); // Assuming 'degree' field exists
-        $pgStudents = Student::where('degree', 'MS')->count(); // Assuming 'degree_level' field exists
+        $pgStudents = Student::where('degree', 'MS')->count();
+        $Adopedstudents = Student::where('make_pledge', 0)
+        ->where('payment_approved', 0)
+        ->count(); // Assuming 'degree_level' field exists
 
-        return view('dashboard', compact('totalStudents', 'ugStudents', 'pgStudents'));
+        return view('dashboard', compact('totalStudents', 'ugStudents', 'pgStudents', 'Adopedstudents'));
     }
 
     public function showLoginForm()

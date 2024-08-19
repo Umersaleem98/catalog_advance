@@ -35,10 +35,10 @@
                         <!-- Total Number of Students Card -->
                         <div class="col-md-6 col-lg-3 mb-4">
                             <div class="card shadow-sm">
-                                <div class="card-body">
-                                    <h5 class="card-title">Total Students</h5>
-                                    <p class="card-text">
-                                        <span class="h2">{{ $totalStudents }}</span>
+                                <div class="card-body bg-dark">
+                                    <h5 class="card-title text-light">Total Students</h5>
+                                    <p class="card-text ">
+                                        <span class="h2 text-light">{{ $totalStudents }}</span>
                                     </p>
                                 </div>
                             </div>
@@ -47,10 +47,10 @@
                         <!-- Open Fund Students Card -->
                         <div class="col-md-6 col-lg-3 mb-4">
                             <div class="card shadow-sm">
-                                <div class="card-body">
-                                    <h5 class="card-title">Open Fund Students</h5>
-                                    <p class="card-text">
-                                        <span class="h2">{{ $totalStudents }}</span>
+                                <div class="card-body bg-dark">
+                                    <h5 class="card-title text-light">Adoped Students</h5>
+                                    <p class="card-text ">
+                                        <span class="h2 text-light">{{ $Adopedstudents }}</span>
                                     </p>
                                 </div>
                             </div>
@@ -59,11 +59,12 @@
                         <!-- Undergraduate Students Card -->
                         <div class="col-md-6 col-lg-3 mb-4">
                             <div class="card shadow-sm">
-                                <div class="card-body">
-                                    <h5 class="card-title">UG Students</h5>
-                                    <p class="card-text">
-                                        <span class="h2">{{ $ugStudents }}</span>
+                                <div class="card-body bg-dark">
+                                    <h5 class="card-title text-light">UG Students</h5>
+                                    <p class="card-text ">
+                                        <span class="h2 text-light">{{ $ugStudents }}</span>
                                     </p>
+
                                 </div>
                             </div>
                         </div>
@@ -71,10 +72,10 @@
                         <!-- Postgraduate Students Card -->
                         <div class="col-md-6 col-lg-3 mb-4">
                             <div class="card shadow-sm">
-                                <div class="card-body">
-                                    <h5 class="card-title">PG Students</h5>
-                                    <p class="card-text">
-                                        <span class="h2">{{ $pgStudents }}</span>
+                                <div class="card-body bg-dark">
+                                    <h5 class="card-title text-light">PG Students</h5>
+                                    <p class="card-text ">
+                                        <span class="h2 text-light">{{ $pgStudents }}</span>
                                     </p>
                                 </div>
                             </div>

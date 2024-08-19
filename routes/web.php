@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardAdopedStudentsController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\StudentController;
@@ -93,6 +94,11 @@ Route::get('suport_scholor_payment', [DashboardEndowmentController::class, 'scho
 Route::get('suport_scholor_pledge', [DashboardEndowmentController::class, 'scholor_pledge']);
 Route::get('fundaproject', [DashboardEndowmentController::class, 'fund_project']);
 Route::get('fundaproject', [DashboardEndowmentController::class, 'fund_project']);
+
+// adoped list of students
+Route::get('adoped_students', [DashboardAdopedStudentsController::class, 'adoped_student_list']);
+
+
 
 Route::get('event_list', [EventController::class, 'index']);
 Route::get('event_create', [EventController::class, 'create']);
