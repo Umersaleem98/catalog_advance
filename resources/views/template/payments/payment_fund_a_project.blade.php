@@ -102,7 +102,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="totalCost">Total Cost:</label>
+                            <label for="totalCost">Total Cost: (PKR) </label>
                             <input type="text" class="form-control" id="totalCost" name="amount" readonly>
                         </div>
                         <button type="submit" name="submit" class="btn btn-success btn-block">Proceed to Payment</button>

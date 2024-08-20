@@ -28,6 +28,7 @@ Route::post('/register', [AuthController::class, 'register']);
 
 // home page or index pages routes
 Route::get('/',[HomeController::class, 'index']);
+
 Route::get('/our_team',[HomeController::class, 'Team_index']);
 Route::get('/meet_out_team/{id}',[HomeController::class, 'About_team']);
 Route::get('/r_m_o',[HomeController::class, 'RMO']);

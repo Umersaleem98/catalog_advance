@@ -67,6 +67,7 @@
             </div>
             <div class="card-text text-dark mb-2">{{ $item->discipline }}</div>
             <div class="card-text text-dark mb-2">{{ $item->gender }}</div>
+            {{-- <div class="card-text text-dark mb-2">{{ $item->monthly_income }}</div> --}}
         </div>
     </div>
 </div>

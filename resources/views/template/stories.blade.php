@@ -11,10 +11,12 @@
         <div class="row course_boxes">
             <div class="col-lg-12 course_box">
                 <div class="card col-12">
-                    <video width="100%" height="500px" loop autoplay muted style="object-fit: cover;">
-                        <source src="{{ asset('templates/videos/video.mp4') }}" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video class="embed-responsive-item" loop autoplay muted style="object-fit: cover;">
+                            <source src="{{ asset('templates/videos/video.mp4') }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
             </div>
         </div>

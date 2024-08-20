@@ -5,16 +5,16 @@
     @include('template.head')
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
-        .info_container {
-    color: black;
-}
-
-
-                .disabled-link {
+        .info_container
+        {
+                color: black;
+         }
+        .disabled-link
+        {
                     pointer-events: none;
                     cursor: not-allowed;
                     opacity: 0.6;
-                }
+        }
 
     </style>
 </head>
@@ -64,7 +64,7 @@
                         {{-- <h2>Qalam ID: <span>{{$students->qalam_id}}</span></h2> --}}
                         <!-- Add an ID to the paragraph tag for easier targeting with JavaScript -->
                         {{-- <h2>Son/Doughter of <span>{{$students->father_name}}</span></h2> --}}
-                        <h3>The Student from: <span>{{$students->province}}</span></h3>
+                        <h3>Hometown: <span>{{$students->province}}</span></h3>
                         <!-- Add a unique ID to the paragraph tag for targeting -->
                         <h3>Discipline: <span>{{$students->discipline}}</span></h3>
                         <!-- Add a unique ID to the paragraph tag for targeting -->
@@ -72,7 +72,7 @@
                         <!-- Add a unique ID to the paragraph tag for targeting -->
                         <h3>Gender: <span>{{$students->gender}}</span></h3>
 
-                        <h3>Household Income: <span>{{$students->monthly_income}}</span></h3>
+                        <h3>Household Income: <span>{{$students->monthly_income}} (PKR)</span></h3>
                         <!-- Add a unique ID to the paragraph tag for targeting -->
                         <br>
 
@@ -82,9 +82,11 @@
                         <div class="owl-item">
                             <div class="testimonials_item text-center">
                                 {{-- <div class="quote">“</div> --}}
-                                <p class="testimonials_text"><span class="quote">"</span>
+                                <p class="text-dark" style="text-align: start">
+                                    {{-- <span class="quote">"</span> --}}
                                     {{$students->statement_of_purpose}}
-                                    <span class="quote">"</span> </p>
+                                    {{-- <span class="quote">"</span> --}}
+                                 </p>
 
                             </div>
                         </div>
@@ -100,7 +102,7 @@
 
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
                 <div class="hero_box d-flex flex-row align-items-center justify-content-start" style="height:100px">
                     <!-- Conditional link based on $isPledgeApproved value -->
                     <a href="{{ $isPledgeApproved == 1 ? url('Make_a_Pledge', ['id' => $students->id]) : '#' }}"

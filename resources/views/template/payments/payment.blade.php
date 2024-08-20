@@ -145,7 +145,7 @@
                                     </select>
                                 </div>
                                 <div class="col">
-                                    <label for="amount" class="form-label">Amount</label>
+                                    <label for="amount" class="form-label">Amount (PKR)</label>
                                     <input type="text" class="form-control" placeholder="Enter Amount" id="amount" name="amount">
                                 </div>
 
