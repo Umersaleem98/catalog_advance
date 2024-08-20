@@ -28,11 +28,11 @@
                     </a>
                     <ul class="collapse" id="users" data-parent="#sidebar-menu">
                         <div class="sub-menu">
-                            <li>
+                            {{-- <li>
                                 <a class="sidenav-item-link" href="{{ url('students_get') }}">
                                     <span class="nav-text">Students List</span>
                                 </a>
-                            </li>
+                            </li> --}}
                             <li>
                                 <a class="sidenav-item-link" href="{{ url('open_funds_students_list') }}">
                                     <span class="nav-text">Open Funds Students</span>
