@@ -116,7 +116,7 @@
         <div class="col-md-8">
             <div class="p-3 p-md-5 mt-5">
                 <p class="text-dark responsive-text">
-                    By supporting NUST students, you're investing in a world-class education that yields remarkable results. With a <b>94% graduate employment rate and a global QS ranking of 353, NUST is the premier engineering university in Pakistan, offering top-tier education at 1/3rd of the cost against other leading HEIs in Pakistan.</b> Your contribution will empower talented individuals to achieve their full potential, driving innovation and progress in their fields. Join us in shaping the future of Pakistan's next generation of leaders and change-makers.
+                    By supporting NUST students, you're investing in a world-class education that yields remarkable results. With a <b>93% graduate employment rate and a global QS ranking of 353, NUST is the premier engineering university in Pakistan, offering top-tier education at 1/3rd of the cost against other leading HEIs in Pakistan.</b> Your contribution will empower talented individuals to achieve their full potential, driving innovation and progress in their fields. Join us in shaping the future of Pakistan's next generation of leaders and change-makers.
                 </p>
             </div>
         </div>
