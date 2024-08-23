@@ -162,6 +162,30 @@
                     {{-- <h2 class="text-center text-dark title">Thank You</h2> --}}
                     <p class="description p-5 bg-image">
                         While there is no means that we can pay back your kindness, in return, this contribution will offer substantial brand exposure and leave goodwill associated with your name.
+
+                        NUST PLEDGE AND DONOR BILL OF RIGHTS
+                        <br>
+                        1.	Assure that the gift will be used for the purposes for which it is given
+                       <br>
+                        2.	Keep the Donor informed of all the details regarding the outstanding dues
+                        <br>
+
+                        3.	NUST shall provide the provision to donor to established scholarship under the name of choice.
+                        <br>
+
+                        4.	Awardee will be selected by the Need-based Scholarship Award Committee
+                        <br>
+
+                        5.	NUST will forward the student details and will transfer the proceeds from the fund to NUST Finance Office for adjustment in the student account. No money will be given directly to the student in any form (cash or cheque)
+
+                        <br>
+                       6.	NUST will share students’ progress reports with donors, annually
+
+                       <br>
+                       7.	NUST shall offer marketing mileage to the donor on its social media and web handles as a partner
+
+                       <br>
+                       8.	NUST shall offer marketing mileage to scholarship established under donor name of choice on social media, donor wall, an invitation to annual donor recognition events, and shoutout on official website
                     </p>
                 </div>
             </div>
