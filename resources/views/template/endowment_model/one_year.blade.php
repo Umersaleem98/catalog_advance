@@ -49,7 +49,7 @@
                 <div class="tab-pane fade show active" id="undergraduate" role="tabpanel" aria-labelledby="undergraduate-tab">
                     <div class="row mt-5">
 
-                        <div class="col-md-4">
+                        <div class="col-md-4 mb-2">
                             <h3 class="text-light text-center p-3" style="background-color: #004476;">Engineering Students</h3>
                             <form action="{{url('default_one_year_degree')}}" method="post" enctype="multipart/form-data">
                                 @csrf
@@ -231,7 +231,7 @@
                             </form>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-4 mb-2">
                             <h3 class="text-light text-center p-3" style="background-color: #004476;">Non Engineering Students</h3>
                             <form action="{{url('default_one_year_degree')}}" method="post" enctype="multipart/form-data">
                                 @csrf
@@ -413,7 +413,7 @@
                         </div>
 
 
-                        <div class="col-md-4">
+                        <div class="col-md-4 mb-2">
                             <!-- Add your undergraduate content here -->
                             <!-- Example form structure -->
                             <form action="{{url('endowmentsupportoneyear')}}" method="post" enctype="multipart/form-data" class="">
@@ -636,7 +636,7 @@
                 <div class="tab-pane fade" id="postgraduate" role="tabpanel" aria-labelledby="postgraduate-tab">
                     <div class="row mt-5">
 
-                        <div class="col-md-4">
+                        <div class="col-md-4 mb-2">
                             <h3 class="text-light text-center p-3" style="background-color: #004476;">Postgraduate Engineering Students</h3>
                             <form action="{{url('default_one_year_degree')}}" method="post" enctype="multipart/form-data">
                                 @csrf
@@ -817,7 +817,7 @@
                             </form>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-4 mb-2">
                             <h3 class="text-light text-center p-3" style="background-color: #004476;">Postgraduate Non-Engineering Students</h3>
                             <form action="{{url('default_one_year_degree')}}" method="post" enctype="multipart/form-data">
                                 @csrf
@@ -999,7 +999,7 @@
 
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-4 mb-2">
                             <form action="{{ url('endowmentsupportoneyear') }}" method="post" enctype="multipart/form-data" id="pgForm">
                                 @csrf
                                 <h3  class="text-light text-center p-3" style="background-color: #004476;" >Customize Your Package</h3>

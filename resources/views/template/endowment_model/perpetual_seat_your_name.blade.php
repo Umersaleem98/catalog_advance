@@ -30,16 +30,16 @@
             <!-- Center Tabs Navigation -->
             <div class="d-flex justify-content-center">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
+                    <li class="nav-item mb-2" role="presentation">
                         <button class="nav-link custom-tab active" id="single-endowment-ug-tab" data-bs-toggle="tab" data-bs-target="#single-endowment-ug" type="button" role="tab" aria-controls="single-endowment-ug" aria-selected="true" style="background-color: #004476; color:white">Single Endowment (UG)</button>
                     </li>
-                    <li class="nav-item" role="presentation">
+                    <li class="nav-item mb-2" role="presentation">
                         <button class="nav-link custom-tab" id="circular-endowment-ug-tab" data-bs-toggle="tab" data-bs-target="#circular-endowment-ug" type="button" role="tab" aria-controls="circular-endowment-ug" aria-selected="false" style="background-color: #004476; color:white">Circular Endowment (UG)</button>
                     </li>
-                    <li class="nav-item" role="presentation">
+                    <li class="nav-item mb-2" role="presentation">
                         <button class="nav-link custom-tab" id="single-endowment-pg-tab" data-bs-toggle="tab" data-bs-target="#single-endowment-pg" type="button" role="tab" aria-controls="single-endowment-pg" aria-selected="false" style="background-color: #004476; color:white">Single Endowment (PG)</button>
                     </li>
-                    <li class="nav-item" role="presentation">
+                    <li class="nav-item mb-2" role="presentation">
                         <button class="nav-link custom-tab" id="circular-endowment-pg-tab" data-bs-toggle="tab" data-bs-target="#circular-endowment-pg" type="button" role="tab" aria-controls="circular-endowment-pg" aria-selected="false" style="background-color: #004476; color:white">Circular Endowment (PG)</button>
                     </li>
 
@@ -53,7 +53,7 @@
                     <h3 class="text-center text-dark mt-4">Singular Endowment: Establish one Seat in perpetuity (UG)</h3>
                     <div class="row mt-5">
 
-                        <div class="col-md-4">
+                        <div class="col-md-4 mb-2">
                             <h3 class="text-light text-center p-3" style="background-color: #004476;">Engineering Students</h3>
                             <form action="{{url('default_perpetual_seat')}}" method="post" enctype="multipart/form-data">
                                 @csrf
@@ -66,12 +66,12 @@
                                 </div>
                                 <div class="row p-2 mt-4">
                                     <div class="form-group ml-3">
-                                        <input type="checkbox" class="mess_checkbox" value="275000">
-                                        <label for="pgAdditionalExpenses">Include mess and hostel expenses (275,000 PKR)</label>
+                                        <input type="checkbox" class="mess_checkbox" value="4000000">
+                                        <label for="pgAdditionalExpenses">Include mess and hostel expenses (4,000,000 PKR)</label>
                                     </div>
                                     <div class="form-group ml-3">
                                         <label for="pgTotalAmount">Total Amount:</label>
-                                        <input type="text" class="total_amount form-control" name="totalAmount" class="form-control" value="300000" readonly>
+                                        <input type="text" class="total_amount form-control" name="totalAmount" class="form-control" value="4500000" readonly>
                                     </div>
                                 </div>
 
@@ -237,7 +237,7 @@
                         </div>
                             {{-- non engineering students  --}}
 
-                            <div class="col-md-4">
+                            <div class="col-md-4 mb-2">
                                 <h3 class="text-light text-center p-3" style="background-color: #004476;">Non-Engineering Students</h3>
                                 <form action="{{url('default_perpetual_seat')}}" method="post" enctype="multipart/form-data">
                                     @csrf
@@ -249,12 +249,12 @@
                                     </div>
                                     <div class="row p-2 mt-4">
                                         <div class="form-group ml-3">
-                                            <input type="checkbox" class="mess_checkbox" value="275000">
-                                            <label for="pgAdditionalExpenses">Include mess and hostel expenses (275,000 PKR)</label>
+                                            <input type="checkbox" class="mess_checkbox" value="4000000">
+                                            <label for="pgAdditionalExpenses">Include mess and hostel expenses (4,000,000 PKR)</label>
                                         </div>
                                         <div class="form-group">
                                             <label for="pgTotalAmount">Total Amount:</label>
-                                            <input type="text" class="total_amount form-control" name="totalAmount" class="form-control" value="400000" readonly>
+                                            <input type="text" class="total_amount form-control" name="totalAmount" class="form-control" value="7500000" readonly>
                                         </div>
                                     </div>
 
@@ -418,7 +418,7 @@
                                 </form>
                             </div>
 
-                        <div class="col-md-4 ">
+                        <div class="col-md-4 mb-2 ">
                             <form action="{{url('perpetualseatyourname')}}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 <h3  class="text-light text-center p-3" style="background-color: #004476;" >Customize Your Package</h3>
@@ -635,7 +635,7 @@
                 <div class="tab-pane fade" id="circular-endowment-ug" role="tabpanel" aria-labelledby="circular-endowment-ug-tab">
                             <h3 class="text-center text-dark mt-4">Circular Endowment: 4 seats in perpetuity - student after student (UG)</h3>
                         <div class="row mt-5">
-                            <div class="col-md-4">
+                            <div class="col-md-4 mb-2">
                                 <h3 class="text-light text-center p-3" style="background-color: #004476;">Engineering Students</h3>
                                 <form action="{{url('default_perpetual_seat')}}" method="post" enctype="multipart/form-data">
                                     @csrf
@@ -647,12 +647,12 @@
                                     </div>
                                     <div class="row p-2 mt-4">
                                         <div class="form-group ml-3">
-                                            <input type="checkbox" class="mess_checkbox" value="275000">
-                                            <label for="ugAdditionalExpenses">Include mess and hostel expenses (275,000 PKR)</label>
+                                            <input type="checkbox" class="mess_checkbox" value="16000000">
+                                            <label for="ugAdditionalExpenses">Include mess and hostel expenses (16,000,000 PKR)</label>
                                         </div>
                                         <div class="form-group">
                                             <label for="ugTotalAmount">Total Amount:</label>
-                                            <input type="text" class="total_amount form-control" name="totalAmount" class="form-control" value="300000" readonly>
+                                            <input type="text" class="total_amount form-control" name="totalAmount" class="form-control" value="18000000" readonly>
                                         </div>
                                     </div>
 
@@ -818,7 +818,7 @@
                             </div>
 
 
-                            <div class="col-md-4">
+                            <div class="col-md-4 mb-2">
                                 <h3 class="text-light text-center p-3" style="background-color: #004476;">Non-Engineering Students</h3>
                                 <form action="{{url('default_perpetual_seat')}}" method="post" enctype="multipart/form-data">
                                     @csrf
@@ -831,12 +831,12 @@
                                     </div>
                                     <div class="row p-2 mt-4">
                                         <div class="form-group ml-3">
-                                            <input type="checkbox" class="mess_checkbox" value="275000">
-                                            <label for="ugAdditionalExpenses">Include mess and hostel expenses (275,000 PKR)</label>
+                                            <input type="checkbox" class="mess_checkbox" value="16000000">
+                                            <label for="ugAdditionalExpenses">Include mess and hostel expenses (16,000,000 PKR)</label>
                                         </div>
                                         <div class="form-group">
                                             <label for="ugTotalAmount">Total Amount:</label>
-                                            <input type="text" class="total_amount form-control" name="totalAmount" class="form-control" value="400000" readonly>
+                                            <input type="text" class="total_amount form-control" name="totalAmount" class="form-control" value="30000000" readonly>
                                         </div>
                                     </div>
 
@@ -1000,7 +1000,7 @@
 
                             </div>
 
-                            <div class="col-md-4 ">
+                            <div class="col-md-4 mb-2 ">
                                 <form action="{{url('perpetualseatyourname')}}" method="post" enctype="multipart/form-data">
                                     @csrf
                                     <h3  class="text-light text-center p-3" style="background-color: #004476;" >Customize Your Package</h3>
@@ -1222,7 +1222,7 @@
                     <h3 class="text-center text-dark mt-4">Singular Endowment: Establish one Seat in perpetuity (PG)</h3>
                         <div class="row mt-5">
 
-                            <div class="col-md-4">
+                            <div class="col-md-4 mb-2">
                                 <h3 class="text-light text-center p-3" style="background-color: #004476;">Postgraduate Engineering Students</h3>
                                 <form action="{{url('default_perpetual_seat')}}" method="post" enctype="multipart/form-data">
                                     @csrf
@@ -1235,12 +1235,12 @@
                                     </div>
                                     <div class="row p-2 mt-4">
                                         <div class="form-group ml-3">
-                                            <input type="checkbox" class="mess_checkbox" value="275000">
-                                            <label for="pgAdditionalExpenses">Include mess and hostel expenses (275,000 PKR)</label>
+                                            <input type="checkbox" class="mess_checkbox" value="4000000">
+                                            <label for="pgAdditionalExpenses">Include mess and hostel expenses (4,000,000 PKR)</label>
                                         </div>
                                         <div class="form-group">
                                             <label for="pgTotalAmount">Total Amount:</label>
-                                            <input type="text" class="total_amount form-control" name="totalAmount" class="form-control" value="500000" readonly>
+                                            <input type="text" class="total_amount form-control" name="totalAmount" class="form-control" value="4500000" readonly>
                                         </div>
                                     </div>
 
@@ -1404,7 +1404,7 @@
                                 </form>
                             </div>
 
-                            <div class="col-md-4">
+                            <div class="col-md-4 mb-2">
                                 <h3 class="text-light text-center p-3" style="background-color: #004476;">Postgraduate Non-Engineering Students</h3>
                                 <form action="{{url('default_perpetual_seat')}}" method="post" enctype="multipart/form-data">
                                     @csrf
@@ -1416,12 +1416,12 @@
                                     </div>
                                     <div class="row p-2 mt-4">
                                         <div class="form-group ml-3">
-                                            <input type="checkbox" class="mess_checkbox" value="275000">
-                                            <label for="pgAdditionalExpenses">Include mess and hostel expenses (275,000 PKR)</label>
+                                            <input type="checkbox" class="mess_checkbox" value="4000000">
+                                            <label for="pgAdditionalExpenses">Include mess and hostel expenses (4,000,000 PKR)</label>
                                         </div>
                                         <div class="form-group">
                                             <label for="pgTotalAmount">Total Amount:</label>
-                                            <input type="number" class="total_amount form-control" name="totalAmount" class="form-control" value="450000" readonly>
+                                            <input type="number" class="total_amount form-control" name="totalAmount" class="form-control" value="7500000" readonly>
                                         </div>
                                     </div>
 
@@ -1586,7 +1586,7 @@
 
                             </div>
 
-                                <div class="col-md-4">
+                                <div class="col-md-4 mb-2">
 
                                     <form action="{{url('perpetualseatyourname')}}" method="post" enctype="multipart/form-data">
                                         @csrf
@@ -1806,7 +1806,7 @@
                 <div class="tab-pane fade" id="circular-endowment-pg" role="tabpanel" aria-labelledby="circular-endowment-pg-tab">
                             <h3 class="text-center text-dark mt-4">Circular Endowment: 4 seats in perpetuity - student after student (PG)</h3>
                     <div class="row mt-5">
-                        <div class="col-md-4">
+                        <div class="col-md-4 mb-2">
                             <h3 class="text-light text-center p-3" style="background-color: #004476;">Postgraduate Engineering Students</h3>
                             <form action="{{url('default_perpetual_seat')}}" method="post" enctype="multipart/form-data">
                                 @csrf
@@ -1818,12 +1818,12 @@
                                 </div>
                                 <div class="row p-2 mt-4">
                                     <div class="form-group ml-3">
-                                        <input type="checkbox" class="mess_checkbox" value="275000">
-                                        <label for="pgAdditionalExpenses">Include mess and hostel expenses (275,000 PKR)</label>
+                                        <input type="checkbox" class="mess_checkbox" value="16000000">
+                                        <label for="pgAdditionalExpenses">Include mess and hostel expenses (16,000,000 PKR)</label>
                                     </div>
                                     <div class="form-group">
                                         <label for="pgTotalAmount">Total Amount:</label>
-                                        <input type="text" class="total_amount form-control" name="totalAmount" class="form-control" value="500000" readonly>
+                                        <input type="text" class="total_amount form-control" name="totalAmount" class="form-control" value="18000000" readonly>
                                     </div>
                                 </div>
 
@@ -1988,7 +1988,7 @@
 
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-4 mb-2">
                             <h3 class="text-light text-center p-3" style="background-color: #004476;; color: black">Postgraduate Non-Engineering Students</h3>
                             <form action="{{url('default_perpetual_seat')}}" method="post" enctype="multipart/form-data">
                                 @csrf
@@ -2000,12 +2000,12 @@
                                 </div>
                                 <div class="row p-2 mt-4">
                                     <div class="form-group ml-3">
-                                        <input type="checkbox" class="mess_checkbox" value="275000">
-                                        <label for="pgAdditionalExpenses">Include mess and hostel expenses (275,000 PKR)</label>
+                                        <input type="checkbox" class="mess_checkbox" value="16000000">
+                                        <label for="pgAdditionalExpenses">Include mess and hostel expenses (16,000,000 PKR)</label>
                                     </div>
                                     <div class="form-group">
                                         <label for="pgTotalAmount">Total Amount:</label>
-                                        <input type="number" class="total_amount form-control" name="totalAmount" class="form-control" value="450000" disabled>
+                                        <input type="number" class="total_amount form-control" name="totalAmount" class="form-control" value="30000000" disabled>
                                     </div>
                                 </div>
 
@@ -2170,7 +2170,7 @@
 
                         </div>
 
-                            <div class="col-md-4">
+                            <div class="col-md-4 mb-2">
 
                                 <form action="{{url('perpetualseatyourname')}}" method="post" enctype="multipart/form-data">
                                     @csrf
@@ -2203,8 +2203,8 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="form-check mb-3">
-                                                <input type="checkbox" id="circular_pgAdditionalExpenses" value="275000" class="form-check-input">
-                                                <label for="circular_pgAdditionalExpenses" class="form-check-label">Include mess and hostel expenses (275,000 PKR)</label>
+                                                <input type="checkbox" id="circular_pgAdditionalExpenses" value="16000000" class="form-check-input">
+                                                <label for="circular_pgAdditionalExpenses" class="form-check-label">Include mess and hostel expenses (16,000,000 PKR)</label>
                                             </div>
                                         </div>
 

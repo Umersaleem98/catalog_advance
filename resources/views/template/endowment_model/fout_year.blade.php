@@ -31,10 +31,10 @@
             <!-- Center Tabs Navigation -->
             <div class="d-flex justify-content-center">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
+                    <li class="nav-item mb-2" role="presentation">
                         <button class="nav-link custom-tab active" id="undergraduate-tab" data-bs-toggle="tab" data-bs-target="#undergraduate" type="button" role="tab" aria-controls="undergraduate" aria-selected="true" style="background-color: #004476 ; color:white" >Undergraduate</button>
                     </li>
-                    <li class="nav-item" role="presentation">
+                    <li class="nav-item mb-2" role="presentation">
                         <button class="nav-link custom-tab" id="postgraduate-tab" data-bs-toggle="tab" data-bs-target="#postgraduate" type="button" role="tab" aria-controls="postgraduate" aria-selected="false" style="background-color: #004476; color:white">Postgraduate</button>
                     </li>
                 </ul>
@@ -43,7 +43,7 @@
             <!-- Tabs Content -->
             <div class="tab-content" id="myTabContent">
                 <!-- Undergraduate Tab -->
-                <div class="tab-pane fade show active" id="undergraduate" role="tabpanel" aria-labelledby="undergraduate-tab">
+            <div class="tab-pane fade show active " id="undergraduate" role="tabpanel" aria-labelledby="undergraduate-tab">
                     <div class="row ">
                         <div class="col-12">
                             <!-- Add your undergraduate content here -->
@@ -51,7 +51,7 @@
 
                         <div class="tab-pane fade show active" id="undergraduate" role="tabpanel" aria-labelledby="undergraduate-tab">
                             <div class="row mt-5">
-                                <div class="col-md-4">
+                                <div class="col-md-4 mb-2">
                                     <h3 class="text-light text-center p-3" style="background-color: #004476;">Engineering Students</h3>
                                     <form action="{{url('default_package_full_degree')}}" method="post" enctype="multipart/form-data">
                                         @csrf
@@ -62,12 +62,12 @@
                                         </div>
                                         <div class="row p-2 mt-4">
                                             <div class="form-group ml-3">
-                                                <input type="checkbox" class="mess_checkbox" value="275000">
-                                                <label for="pgAdditionalExpenses">Include mess and hostel expenses (275,000 PKR)</label>
+                                                <input type="checkbox" class="mess_checkbox" value="1100000">
+                                                <label for="pgAdditionalExpenses">Include mess and hostel expenses (1,100,000 PKR)</label>
                                             </div>
                                             <div class="form-group ml-3">
                                                 <label for="pgTotalAmount">Total Amount:</label>
-                                                <input type="text" class="total_amount form-control" name="totalAmount" value="300000" readonly >
+                                                <input type="text" class="total_amount form-control" name="totalAmount" value="1500000" readonly >
                                             </div>
                                         </div>
 
@@ -235,7 +235,7 @@
 
 
 
-                                <div class="col-md-4">
+                                <div class="col-md-4 mb-2">
                                     <h3 class="text-light text-center p-3" style="background-color: #004476;">Non Engineering Students</h3>
                                     <form action="{{url('default_package_full_degree')}}" method="post" enctype="multipart/form-data">
                                         @csrf
@@ -246,12 +246,12 @@
                                         </div>
                                         <div class="row p-2 mt-4">
                                             <div class="form-group ml-3">
-                                                <input type="checkbox" class="mess_checkbox" value="275000">
-                                                <label for="pgAdditionalExpenses">Include mess and hostel expenses (275,000 PKR)</label>
+                                                <input type="checkbox" class="mess_checkbox" value="1100000">
+                                                <label for="pgAdditionalExpenses">Include mess and hostel expenses (1,100,000 PKR)</label>
                                             </div>
                                             <div class="form-group ml-3">
                                                 <label for="pgTotalAmount">Total Amount:</label>
-                                                <input type="text" class="total_amount form-control" name="totalAmount"  value="400000" readonly>
+                                                <input type="text" class="total_amount form-control" name="totalAmount"  value="2000000" readonly>
                                             </div>
                                         </div>
 
@@ -418,7 +418,7 @@
 
 
 
-                                <div class="col-md-4">
+                                <div class="col-md-4 mb-2">
                                     <h3  class="text-light text-center p-3" style="background-color: #004476;" >Customize Your Package</h3>
                                     <form action="{{ url('endowmentsupportentireyear') }}" method="post" enctype="multipart/form-data">
                                         @csrf
@@ -630,7 +630,7 @@
                 <!-- Postgraduate Tab -->
                 <div class="tab-pane fade" id="postgraduate" role="tabpanel" aria-labelledby="postgraduate-tab">
                     <div class="row mt-5">
-                        <div class="col-md-4">
+                        <div class="col-md-4 mb-2">
                             <h3 class="text-light text-center p-3" style="background-color: #004476;">Post Graduate Students</h3>
                             <form action="{{url('default_package_full_degree')}}" method="post" enctype="multipart/form-data">
                                 @csrf
@@ -641,12 +641,12 @@
                                 </div>
                                 <div class="row p-2 mt-4">
                                     <div class="form-group ml-3">
-                                        <input type="checkbox" class="mess_checkbox" value="275000">
-                                        <label for="pgAdditionalExpenses">Include mess and hostel expenses (275,000 PKR)</label>
+                                        <input type="checkbox" class="mess_checkbox" value="1100000">
+                                        <label for="pgAdditionalExpenses">Include mess and hostel expenses (1,100,000 PKR)</label>
                                     </div>
                                     <div class="form-group ml-3">
                                         <label for="pgTotalAmount">Total Amount:</label>
-                                        <input type="text" class="total_amount form-control" name="totalAmount" value="300000" readonly>
+                                        <input type="text" class="total_amount form-control" name="totalAmount" value="725000" readonly>
                                     </div>
                                 </div>
 
@@ -811,7 +811,7 @@
                         </div>
 
 
-                        <div class="col-md-4">
+                        <div class="col-md-4 mb-2">
                             <h3 class="text-light text-center p-3" style="background-color: #004476;">Postgraduate Non-Engineering Students</h3>
                             <form action="{{url('default_package_full_degree')}}" method="post" enctype="multipart/form-data">
                                 @csrf
@@ -822,12 +822,12 @@
                                 </div>
                                 <div class="row p-2 mt-4">
                                     <div class="form-group ml-3">
-                                        <input type="checkbox" class="mess_checkbox" value="275000">
-                                        <label for="pgAdditionalExpenses">Include mess and hostel expenses (275,000 PKR)</label>
+                                        <input type="checkbox" class="mess_checkbox" value="1100000">
+                                        <label for="pgAdditionalExpenses">Include mess and hostel expenses (1,100,000 PKR)</label>
                                     </div>
                                     <div class="form-group ml-3">
                                         <label for="pgTotalAmount">Total Amount:</label>
-                                        <input type="text" class="total_amount form-control" name="totalAmount" value="400000" readonly>
+                                        <input type="text" class="total_amount form-control" name="totalAmount" value="1000000" readonly>
                                     </div>
                                 </div>
 
@@ -995,7 +995,7 @@
 
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-4 mb-2">
 
                             <form action="{{url('endowmentsupportentireyear')}}" method="post" enctype="multipart/form-data">
                                 @csrf
@@ -1252,3 +1252,66 @@
 
 </body>
 </html>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const degreeSelect = document.getElementById('ugDegree');
+        const quantityInput = document.getElementById('ugQuantity');
+        const additionalExpensesCheckbox = document.getElementById('ugAdditionalExpenses');
+        const totalAmountInput = document.getElementById('ugTotalAmount');
+        const selectedDegreeInput = document.getElementById('ugSelectedDegree');
+
+        function calculateTotal() {
+            const selectedOption = degreeSelect.options[degreeSelect.selectedIndex];
+            const fee = parseFloat(selectedOption.value) || 0;
+            const seats = parseInt(quantityInput.value, 10) || 1;
+            const additionalExpenses = additionalExpensesCheckbox.checked ? parseFloat(additionalExpensesCheckbox.value) : 0;
+
+            const totalFee = (fee * seats) * 4;
+            const totalAmount = totalFee + additionalExpenses;
+
+            totalAmountInput.value = totalAmount.toFixed(2);
+            selectedDegreeInput.value = selectedOption.getAttribute('data-degree-name') || '';
+        }
+
+        // Event listeners
+        degreeSelect.addEventListener('change', calculateTotal);
+        quantityInput.addEventListener('input', calculateTotal);
+        additionalExpensesCheckbox.addEventListener('change', calculateTotal);
+
+        // Initial calculation
+        calculateTotal();
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const degreeSelect = document.getElementById('pgDegree');
+        const quantityInput = document.getElementById('pgQuantity');
+        const additionalExpensesCheckbox = document.getElementById('pgAdditionalExpenses');
+        const totalAmountInput = document.getElementById('pgTotalAmount');
+        const selectedDegreeInput = document.getElementById('pgSelectedDegree');
+
+        function calculateTotal() {
+            const selectedOption = degreeSelect.options[degreeSelect.selectedIndex];
+            const fee = parseFloat(selectedOption.value) || 0;
+            const seats = parseInt(quantityInput.value, 10) || 1;
+            const additionalExpenses = additionalExpensesCheckbox.checked ? parseFloat(additionalExpensesCheckbox.value) : 0;
+
+            // Change the multiplier from 4 to 2
+            const totalFee = (fee * seats) * 2;
+            const totalAmount = totalFee + additionalExpenses;
+
+            totalAmountInput.value = totalAmount.toFixed(2);
+            selectedDegreeInput.value = selectedOption.getAttribute('data-degree-name') || '';
+        }
+
+        // Event listeners
+        degreeSelect.addEventListener('change', calculateTotal);
+        quantityInput.addEventListener('input', calculateTotal);
+        additionalExpensesCheckbox.addEventListener('change', calculateTotal);
+
+        // Initial calculation
+        calculateTotal();
+    });
+</script>

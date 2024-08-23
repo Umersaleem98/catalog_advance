@@ -52,7 +52,7 @@
                     <a href="advancement.nust.edu.pk"><h3 class="text-center text-light mt-3">advancement.nust.edu.pk</h3></a>
                 </div>
                 <div class="col-md-4 mb-3 p-4 text-light" style="background-color: #085590;">
-                    <h2 class="text-center"><i class="fas mr-3 fa-phone"></i> phone</h2>
+                    <h2 class="text-center"><i class="fas mr-3 fa-phone"></i> Phone</h2>
                     <h3 class="text-center mt-3">+92 51 9085 6821</h3>
                 </div>
             </div>

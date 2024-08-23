@@ -139,10 +139,10 @@ ul {
             </div>
             <div class="col-lg-8 col-md-12 col-sm-12 text-container">
                 <p class="text-dark collapsed" id="text">
-                    <b>A commitment</b> to quality faculty and students has fueled NUST’s impressive rise in rankings and the success of our international alumni network. As Director Advancement, I am privileged to steer a self-sustaining system that supports <b>Pakistan’s leading science and technology university.</b> Our aim is to become the driving force of Pakistan’s knowledge economy, with the <b>dream of making NUST a need-blind university.</b>
-                    Many deserving students face significant financial challenges, with <b>nearly half of our undergraduates requiring scholarships. Despite our best efforts, a gap remains, affecting 150 to 250 students</b> annually. Our <b>NEED Initiative Campaign</b> aims to bridge this gap, ensuring all talented students can afford higher education.
+                    <b style="color: #085590; font-size: 16px;">A commitment</b> to quality faculty and students has fueled NUST’s impressive rise in rankings and the success of our international alumni network. As Director Advancement, I am privileged to steer a self-sustaining system that supports <b style="color: #085590; font-size: 16px;">Pakistan’s leading science and technology university.</b> Our aim is to become the driving force of Pakistan’s knowledge economy, with the <b style="color: #085590; font-size: 16px;">dream of making NUST a need-blind university.</b>
+                    Many deserving students face significant financial challenges, with <b style="color: #085590; font-size: 16px;">nearly half of our undergraduates requiring scholarships. Despite our best efforts, a gap remains, affecting 150 to 250 students</b> annually. Our <b style="color: #085590; font-size: 16px;">NEED Initiative Campaign</b> aims to bridge this gap, ensuring all talented students can afford higher education.
                     <br>
-                    Your support is crucial to this campaign, dedicated to making need-blind admissions a reality and empowering our youth. <b>Join us in sponsoring dreams and lighting the way for an equitable future.</b>
+                    Your support is crucial to this campaign, dedicated to making need-blind admissions a reality and empowering our youth. <b style="color: #085590; font-size: 16px;">Join us in sponsoring dreams and lighting the way for an equitable future.</b>
                 </p>
                 <span class="show-more" id="showMoreBtn">Show More</span>
                 <div class="author">
@@ -151,6 +151,7 @@ ul {
                     University Advancement Office
                 </div>
             </div>
+
         </div>
     </div>
 

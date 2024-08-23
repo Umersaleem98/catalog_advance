@@ -5,54 +5,61 @@
 
     .cookie-card {
         width: 100%;
-        padding: 1rem;
-        background-color: rgba(255, 255, 255, 0.8); /* Make background semi-transparent */
-        box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
-        height: 100%; /* Ensuring the card takes full height */
+        padding: 2rem;
+        background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque background */
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, .1); /* Softer shadow */
+        height: 100%;
+        border-radius: 10px; /* Rounded corners for a modern look */
     }
 
     .title {
-        font-weight: 600;
-        color: rgb(31 41 55);
+        font-weight: 700;
+        color: rgb(31, 41, 55);
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-family: 'Merriweather', serif; /* Use a serif font for a classic look */
     }
 
     .description {
         margin-top: 1rem;
-        font-size: 0.875rem; /* Small base font size */
-        line-height: 1.25rem; /* Adjust line height */
-        color: rgb(75 85 99);
-        font-weight: 900;
-        font-family: 'Mongolian Baliti', sans-serif;
+        font-size: 1rem;
+        line-height: 1.6rem;
+        color: #444;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif; /* Use a clean sans-serif font */
+        text-align: justify;
     }
 
     @media (min-width: 576px) {
         .description {
-            font-size: 1rem; /* Slightly larger font size for small screens */
-            line-height: 1.5rem;
+            font-size: 1.125rem;
+            line-height: 1.75rem;
         }
     }
 
     @media (min-width: 768px) {
         .description {
-            font-size: 1.125rem; /* Larger font size for medium screens */
-            line-height: 1.75rem;
+            font-size: 1.25rem;
+            line-height: 2rem;
         }
     }
 
     @media (min-width: 992px) {
         .description {
-            font-size: 1.25rem; /* Larger font size for large screens */
-            line-height: 2rem;
+            font-size: 1.375rem;
+            line-height: 2.25rem;
         }
     }
 
     .description a {
-        --tw-text-opacity: 1;
-        color: rgb(59 130 246);
+        color: rgb(59, 130, 246);
+        font-weight: bold;
+        text-decoration: none;
     }
 
     .description a:hover {
-        text-decoration-line: underline;
+        text-decoration: underline;
     }
 
     .actions {
@@ -65,9 +72,9 @@
     }
 
     .pref {
-        font-size: 0.75rem;
-        line-height: 1rem;
-        color: rgb(31 41 55);
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: rgb(31, 41, 55);
         text-decoration-line: underline;
         transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
         border: none;
@@ -75,7 +82,7 @@
     }
 
     .pref:hover {
-        color: rgb(156 163 175);
+        color: rgb(156, 163, 175);
     }
 
     .pref:focus {
@@ -84,9 +91,9 @@
     }
 
     .accept {
-        font-size: 0.75rem;
-        line-height: 1rem;
-        background-color: rgb(17 24 39);
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        background-color: rgb(17, 24, 39);
         font-weight: 500;
         border-radius: 0.5rem;
         color: #fff;
@@ -99,7 +106,7 @@
     }
 
     .accept:hover {
-        background-color: rgb(55 65 81);
+        background-color: rgb(55, 65, 81);
     }
 
     .accept:focus {
@@ -108,8 +115,8 @@
     }
 
     .img-container img {
-        width: 100%; /* Ensure the image is fluid */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%;
+        height: auto;
         object-fit: cover;
     }
 
@@ -119,8 +126,23 @@
         background-position: center;
         background-repeat: no-repeat;
         position: relative;
-        opacity: 1;
-        padding: 2rem; /* Adding some padding */
+        opacity: 0.9;
+        padding: 2rem;
+        border-radius: 10px;
+        color: #fff; /* Ensuring text is visible on the background */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add a slight text shadow for better readability */
+    }
+
+    .text-light {
+        color: #f9f9f9;
+    }
+
+    .section_title h1 {
+        font-family: 'Merriweather', serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #222;
+        margin-bottom: 20px;
     }
 </style>
 
@@ -137,10 +159,9 @@
         <div class="row d-flex align-items-stretch">
             <div class="col-lg-12">
                 <div class="cookie-card d-flex flex-column">
-                    <h2 class="text-center text-dark"></h2>
-                    <p class="description p-5 bg-image text-light">
-                        Throughout the years, the overwhelming support from our well-wishing donors and partners has restored our faith in humanity and has made us immensely proud to relate to such philanthropic Pakistanis around the globe.  
-                        We would like to take a moment to thank our distinguished donors, allies and our body of alumni for placing their trust in us and for the continuation of their unwavering support for this cause. We applaud them for standing true to the cause and are sure to say that their kindness will be passed down to generations.
+                    {{-- <h2 class="text-center text-dark title">Thank You</h2> --}}
+                    <p class="description p-5 bg-image">
+                        While there is no means that we can pay back your kindness, in return, this contribution will offer substantial brand exposure and leave goodwill associated with your name.
                     </p>
                 </div>
             </div>

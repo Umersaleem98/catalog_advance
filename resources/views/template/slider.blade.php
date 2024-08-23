@@ -54,12 +54,13 @@
     }
     @media (min-width: 769px) and (max-width: 992px) {
         .responsive-text {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
     }
     @media (min-width: 993px) {
         .responsive-text {
-            font-size: 1.3rem;
+            font-size: 18px;
+
         }
     }
 </style>
@@ -102,22 +103,41 @@
         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
     </ol>
 </div>
-<div class="container-fluid mt-4">
+<div class="container-fluid mt-4" style="background-color: #E3E3E3; ">
     <div class="row ">
-        <div class="col-md-4 text-light p-3" style="margin-top: -70px; font-weight: 700; background-color: #085590">
-            <h2 class="text-center text-md-left" style="font-size: 30px;">WHY NUST?</h2>
+        <div class="col-md-4 text-light p-3" style=" font-weight: 700; background-color: #085590">
+            <h2 class="text-center text-md-left" style="font-size: 50px;">WHY</h2>
+            <h2 class="text-center text-md-left " style="font-size: 40px;">CHOOSE NUST ?</h2>
             <div class="row">
                 <div class="col-12">
                     <!-- Responsive image -->
-                    <img src="{{ asset('templates/stats/abc.jpg') }}" class="img-fluid" alt="Responsive image" style="max-height: 400px; width: 100%">
+                    <img src="{{ asset('templates/stats/abc.jpg') }}" class="img-fluid mt-2" alt="Responsive image" style="max-height: 400px; width: 100%">
                 </div>
+
             </div>
+            <div class="row d-flex align-items-center justify-content-center p-3">
+                <h1 class="ml-3">
+                    <span style="font-size: 45px;">353<sup>rd</sup></span>
+                    <span style="font-size: 35px; margin-left: 5px;">According to QS World Rankings 2023-24</span>
+                </h1>
+            </div>
+
+
         </div>
         <div class="col-md-8">
             <div class="p-3 p-md-5 mt-5">
-                <p class="text-dark responsive-text">
-                    By supporting NUST students, you're investing in a world-class education that yields remarkable results. With a <b>93% graduate employment rate and a global QS ranking of 353, NUST is the premier engineering university in Pakistan, offering top-tier education at 1/3rd of the cost against other leading HEIs in Pakistan.</b> Your contribution will empower talented individuals to achieve their full potential, driving innovation and progress in their fields. Join us in shaping the future of Pakistan's next generation of leaders and change-makers.
-                </p>
+
+                <p class="text-dark responsive-text" style="text-align: justify;">
+                    As <b>National University of Sciences and Technology (NUST)</b> enters its fourth decade of excellence, our commitment to quality education is reflected in our impressive ascent in the QS World University Rankings 2023-2024. We have consistently upheld our reputation as a beacon of excellence in higher education in Pakistan while being at par with contemporaries in the elite league of the top universities of the world for the past decade. Our steadfast commitment to fostering knowledge has benefited not only our students but also paved the way for sustainable solutions that can shape tomorrow.
+
+               </p>
+                    <p class="text-dark responsive-text" style="text-align: justify ">
+
+                        <b>
+                        In these transformative times, one of the measures of a world-class university by virtue of its strategic importance is building student support  scholarships. The establishment of such initiatives at NUST will help us ensure that no student quits education owing to financial constraints.
+                    </b>
+
+                    </p>
             </div>
         </div>
 

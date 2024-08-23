@@ -17,12 +17,12 @@ a{
 
                     <!-- Logo -->
                     <div class="logo_container mb-3">
-                        <div class="logo">
+                        <div class="logo" style="background-color: white; padding: 10px;">
                             <!-- Use asset function for the image URL -->
-                            <img src="{{ asset('templates/images/logo.png') }}" alt="Logo" class="img-fluid" style="max-width: 80px">
+                            <img src="{{ asset('templates/images/logo.png') }}" alt="Logo" class="img-fluid" style="max-width: 120px;">
                         </div>
                     </div>
-                    <p class="footer_about_text">Inspiring Minds, Crafting Futures</p>
+                    <p class="footer_about_text text-light" style="font-size: 16px;">Inspiring Minds, Crafting Futures</p>
                 </div>
                 <!-- Footer Column - Menu -->
                 <div class="col-lg-3 footer_col">

@@ -13,6 +13,7 @@
 
         p {
             color: black;
+            text-align: justify;
         }
     </style>
 </head>
@@ -40,9 +41,8 @@
                     <img src="{{ asset('templates/signature_program/abc.jpg') }}" alt="Image 1" class="img-fluid" style="border-radius: 5%; height:240px; width: 100%">
                 </div>
                 <div class="col-md-7">
-                    <h2 class="text-center text-dark ">NUST Advisory Council for Resource Mobilization</h2>
-                    <p>A pioneering initiative designed to foster meaningful connections with friends and alumni of NUST. The primary objective of this innovative office is to harness the collective potential of NUST's extensive network to secure vital resources and funding. Since its inception, the Resource Mobilization Office has successfully assembled a team of three dedicated Resource Mobilization Officers (RMOs), who have played a pivotal role in expanding our outreach and establishing a strong presence in their respective regions. Through their tireless efforts, we have been able to broaden our donor base, cultivate strategic partnerships, and secure essential support for our academic and research initiatives.
-                        We would like to acknowledge our RMOs on our catalog :</p>
+                    <h2 class="text-center text-dark">NUST Advisory Council for Resource Mobilization</h2>
+                    <p>A pioneering initiative designed to foster meaningful connections with friends and alumni of NUST. The primary objective of this innovative office is to harness the collective potential of NUST's extensive network to secure vital resources and funding. Since its inception, the Resource Mobilization Office has successfully assembled a team of five dedicated Resource Mobilization Officers (RMOs), who have played a pivotal role in expanding our outreach and establishing a strong presence in their respective regions. Through their tireless efforts, we have been able to broaden our donor base, cultivate strategic partnerships, and secure essential support for our academic and research initiatives. We would like to acknowledge our RMOs on our catalog :</p>
                 </div>
             </div>
 
@@ -75,7 +75,7 @@
                 </div>
                 <div class="col-md-7 order-md-1">
                     <h2 class="text-center text-dark">Al-Musaid: Supporting Bright Futures</h2>
-                    <p>In Ramadan 2024, the University Advancement Office (UAO) launched the zakat campaign "Al-Musaid," dedicated to raising essential funds for deserving students. This initiative has already successfully garnered PKR 5,775,584, highlighting UAO's unwavering commitment to providing financial support to the nation's brightest minds. Through efforts like Al-Musaid, we strive to ensure that the dream of higher education becomes a reality for all talented students, regardless of their financial backgrounds. Be a part of our mission to empower the leaders of tomorrow.</p>
+                    <p>In Ramadan 2024, the University Advancement Office (UAO) launched the zakat campaign "Al-Musaid," aimed at raising crucial funds for deserving students. This initiative has already achieved remarkable success, underscoring UAO's unwavering commitment to supporting the nation's brightest minds. Through efforts like Al-Musaid, we are dedicated to ensuring that the dream of higher education is within reach for all talented students, regardless of their financial circumstances. Join us in our mission to empower the leaders of tomorrow.</p>
                 </div>
             </div>
         </div>
